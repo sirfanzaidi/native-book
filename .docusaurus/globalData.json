@@ -11,6 +11,16 @@
           "mainDocId": "index",
           "docs": [
             {
+              "id": "capstone-project/10-capstone-project",
+              "path": "/native-book/capstone-project/10-capstone-project",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "capstone-project/11-capstone-implementation",
+              "path": "/native-book/capstone-project/11-capstone-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "index",
               "path": "/native-book/",
               "sidebar": "tutorialSidebar"

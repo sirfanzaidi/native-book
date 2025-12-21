@@ -23,6 +23,9 @@
     "03fcc44b": [
       342
     ],
+    "231df5de": [
+      895
+    ],
     "2e7a9b0a": [
       4
     ],
@@ -34,6 +37,9 @@
     ],
     "5e95c892": [
       647
+    ],
+    "7123a313": [
+      454
     ],
     "a7bd4aaa": [
       98
@@ -141,9 +147,9 @@
     "354": {
       "js": [
         {
-          "file": "assets/js/runtime~main.bf73dd78.js",
-          "hash": "51092fd3692995b0",
-          "publicPath": "/native-book/assets/js/runtime~main.bf73dd78.js"
+          "file": "assets/js/runtime~main.f05747ac.js",
+          "hash": "c2bf71e0617b1342",
+          "publicPath": "/native-book/assets/js/runtime~main.f05747ac.js"
         }
       ]
     },
@@ -168,9 +174,9 @@
     "396": {
       "js": [
         {
-          "file": "assets/js/d2c6750f.b12c0ac8.js",
-          "hash": "358c5c1d62ec8b0b",
-          "publicPath": "/native-book/assets/js/d2c6750f.b12c0ac8.js"
+          "file": "assets/js/d2c6750f.948a5a9e.js",
+          "hash": "872b0e529d83cc02",
+          "publicPath": "/native-book/assets/js/d2c6750f.948a5a9e.js"
         }
       ]
     },
@@ -189,6 +195,15 @@
           "file": "assets/js/c8130fbc.7249bf94.js",
           "hash": "407855caf72dbb21",
           "publicPath": "/native-book/assets/js/c8130fbc.7249bf94.js"
+        }
+      ]
+    },
+    "454": {
+      "js": [
+        {
+          "file": "assets/js/7123a313.51b004ce.js",
+          "hash": "30b9c86f008d133b",
+          "publicPath": "/native-book/assets/js/7123a313.51b004ce.js"
         }
       ]
     },
@@ -222,9 +237,9 @@
     "738": {
       "js": [
         {
-          "file": "assets/js/300d9e28.10ac4285.js",
-          "hash": "c40182e66f97e74e",
-          "publicPath": "/native-book/assets/js/300d9e28.10ac4285.js"
+          "file": "assets/js/300d9e28.a6db30d3.js",
+          "hash": "47f22226582c7737",
+          "publicPath": "/native-book/assets/js/300d9e28.a6db30d3.js"
         }
       ]
     },
@@ -240,9 +255,9 @@
     "792": {
       "js": [
         {
-          "file": "assets/js/main.5c9637ef.js",
-          "hash": "b3267c5aba4afcf6",
-          "publicPath": "/native-book/assets/js/main.5c9637ef.js"
+          "file": "assets/js/main.b7ab152a.js",
+          "hash": "b079d591d8b45e0b",
+          "publicPath": "/native-book/assets/js/main.b7ab152a.js"
         }
       ]
     },
@@ -252,6 +267,15 @@
           "file": "assets/css/styles.6caa089f.css",
           "hash": "d8a14117e0544cc1",
           "publicPath": "/native-book/assets/css/styles.6caa089f.css"
+        }
+      ]
+    },
+    "895": {
+      "js": [
+        {
+          "file": "assets/js/231df5de.a31d26ab.js",
+          "hash": "22cbf35092842eb6",
+          "publicPath": "/native-book/assets/js/231df5de.a31d26ab.js"
         }
       ]
     }

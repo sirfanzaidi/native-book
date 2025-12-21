@@ -21,5 +21,9 @@
   "previous": {
     "title": "Chapter 8: LLM Integration",
     "permalink": "/native-book/module-4-voice-control/08-llm-integration"
+  },
+  "next": {
+    "title": "Chapter 10: Capstone Project",
+    "permalink": "/native-book/capstone-project/10-capstone-project"
   }
 }

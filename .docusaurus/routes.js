@@ -4,16 +4,28 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/native-book/',
-    component: ComponentCreator('/native-book/', 'a7e'),
+    component: ComponentCreator('/native-book/', 'df1'),
     routes: [
       {
         path: '/native-book/',
-        component: ComponentCreator('/native-book/', '2bf'),
+        component: ComponentCreator('/native-book/', '98f'),
         routes: [
           {
             path: '/native-book/',
-            component: ComponentCreator('/native-book/', '78a'),
+            component: ComponentCreator('/native-book/', 'f8f'),
             routes: [
+              {
+                path: '/native-book/capstone-project/10-capstone-project',
+                component: ComponentCreator('/native-book/capstone-project/10-capstone-project', 'f9c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/native-book/capstone-project/11-capstone-implementation',
+                component: ComponentCreator('/native-book/capstone-project/11-capstone-implementation', 'bd3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/native-book/module-1-ros2/01-introduction',
                 component: ComponentCreator('/native-book/module-1-ros2/01-introduction', '3e8'),

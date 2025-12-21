@@ -1,0 +1,25 @@
+{
+  "id": "capstone-project/11-capstone-implementation",
+  "title": "Chapter 11 - Complete End-to-End Implementation",
+  "description": "Introduction",
+  "source": "@site/docs/05-capstone-project/02-end-to-end-implementation.md",
+  "sourceDirName": "05-capstone-project",
+  "slug": "/capstone-project/11-capstone-implementation",
+  "permalink": "/native-book/capstone-project/11-capstone-implementation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/05-capstone-project/02-end-to-end-implementation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "11-capstone-implementation",
+    "title": "Chapter 11 - Complete End-to-End Implementation",
+    "sidebar_label": "Chapter 11: End-to-End Implementation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 10: Capstone Project",
+    "permalink": "/native-book/capstone-project/10-capstone-project"
+  }
+}

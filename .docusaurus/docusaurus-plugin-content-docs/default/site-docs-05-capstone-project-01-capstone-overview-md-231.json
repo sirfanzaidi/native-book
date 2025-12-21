@@ -1,0 +1,29 @@
+{
+  "id": "capstone-project/10-capstone-project",
+  "title": "Chapter 10 - Capstone: Autonomous Furniture Assembly Robot",
+  "description": "Introduction",
+  "source": "@site/docs/05-capstone-project/01-capstone-overview.md",
+  "sourceDirName": "05-capstone-project",
+  "slug": "/capstone-project/10-capstone-project",
+  "permalink": "/native-book/capstone-project/10-capstone-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/05-capstone-project/01-capstone-overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "10-capstone-project",
+    "title": "Chapter 10 - Capstone: Autonomous Furniture Assembly Robot",
+    "sidebar_label": "Chapter 10: Capstone Project"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 9: Vision-Language-Action",
+    "permalink": "/native-book/module-4-voice-control/09-vision-language-action"
+  },
+  "next": {
+    "title": "Chapter 11: End-to-End Implementation",
+    "permalink": "/native-book/capstone-project/11-capstone-implementation"
+  }
+}
