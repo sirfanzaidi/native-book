@@ -1,0 +1,29 @@
+{
+  "id": "module-1-ros2/01-introduction",
+  "title": "Chapter 1 - ROS 2 Architecture: Nodes, Topics, Services",
+  "description": "Introduction",
+  "source": "@site/docs/01-module-1-ros2/01-introduction.md",
+  "sourceDirName": "01-module-1-ros2",
+  "slug": "/module-1-ros2/01-introduction",
+  "permalink": "/native-book/module-1-ros2/01-introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/01-module-1-ros2/01-introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "01-introduction",
+    "title": "Chapter 1 - ROS 2 Architecture: Nodes, Topics, Services",
+    "sidebar_label": "Chapter 1: Architecture"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Physical AI & Humanoid Robotics",
+    "permalink": "/native-book/"
+  },
+  "next": {
+    "title": "Chapter 2: Services",
+    "permalink": "/native-book/module-1-ros2/02-services"
+  }
+}

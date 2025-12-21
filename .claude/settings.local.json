@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specifyscriptsbashcreate-phr.sh --title \"Initialize project constitution for book\" --stage constitution --json)",
+      "Bash(git fetch:*)",
+      "Bash(wc:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(1)",
+      "Bash(npm run clear:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)"
+    ]
+  }
+}

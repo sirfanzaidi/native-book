@@ -1,0 +1,29 @@
+{
+  "id": "module-2-digital-twin/04-gazebo-fundamentals",
+  "title": "Chapter 4 - Gazebo Simulation Fundamentals",
+  "description": "Introduction",
+  "source": "@site/docs/02-module-2-digital-twin/01-gazebo-fundamentals.md",
+  "sourceDirName": "02-module-2-digital-twin",
+  "slug": "/module-2-digital-twin/04-gazebo-fundamentals",
+  "permalink": "/native-book/module-2-digital-twin/04-gazebo-fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/02-module-2-digital-twin/01-gazebo-fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "04-gazebo-fundamentals",
+    "title": "Chapter 4 - Gazebo Simulation Fundamentals",
+    "sidebar_label": "Chapter 4: Gazebo Basics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: Advanced Nodes",
+    "permalink": "/native-book/module-1-ros2/03-advanced-nodes"
+  },
+  "next": {
+    "title": "Chapter 5: ROS 2 + Gazebo",
+    "permalink": "/native-book/module-2-digital-twin/05-ros2-gazebo-bridge"
+  }
+}

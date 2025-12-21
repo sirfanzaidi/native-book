@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  ros2:
+    image: ros:humble
+    container_name: native-book-ros2
+    environment:
+      - ROS_DOMAIN_ID=0
+    volumes:
+      - ./docs:/workspace/docs
+      - ./scripts:/workspace/scripts
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+  docusaurus:
+    image: node:18-alpine
+    container_name: native-book-docusaurus
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: bash -c "npm install && npm run start"
+    environment:
+      - HOST=0.0.0.0

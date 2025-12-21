@@ -1,55 +1,79 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# AI/Spec-Driven Book on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy via Verification
+All claims, code examples, and integrations MUST be traceable to official documentation or primary sources. When referencing external tools, APIs, or frameworks, verification through official docs and practical testing is mandatory before inclusion. Never assume; always verify against authoritative sources.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity for Target Audience
+Content MUST be comprehensible to engineers and CS students with foundational knowledge of AI/robotics concepts. Code examples require inline explanation. Complex concepts broken into digestible sections. Avoid jargon without definition; provide context for all technical terms introduced.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Full Reproducibility
+All code samples, setup procedures, and integrations MUST be end-to-end reproducible by readers. Every command, configuration, and dependency MUST be documented with exact versions. No implicit assumptions; all prerequisites listed. Readers should run examples without modification and achieve identical results.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Rigor Through Established Tools & Frameworks
+Use industry-standard, well-documented tools: Spec-Kit Plus, Claude Code, OpenAI Agents/ChatKit, FastAPI, Neon Postgres, Qdrant Cloud, OpenRouter. Do not introduce experimental or undocumented tools. Preference for tools with active communities, clear documentation, and proven track records.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Zero Plagiarism, Original Content
+All content (text, code, examples, diagrams) MUST be original or properly attributed. External references cited with links and context. Code snippets that adapt patterns from external sources include attribution comments. No copy-paste from online tutorials without explicit rewriting and understanding.
 
-### [PRINCIPLE_6_NAME]
+### VI. Docusaurus-Compatible Format
+All documentation MUST use standard Markdown (.md files only—NO MDX). Content structured for Docusaurus deployment with proper heading hierarchy, cross-references via relative links, and image asset management. Output MUST render correctly on GitHub Pages without custom preprocessing.
 
+## Content & Structure Standards
 
-[PRINCIPLE__DESCRIPTION]
+### Coverage Requirements
+Content MUST cover:
+- Four core modules (topics/units)
+- Capstone project (hands-on integration)
+- Minimum 3 chapters/sections per module
+- All examples runnable end-to-end
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Code Examples
+- Every code example MUST include explanation before and after.
+- Examples embedded with syntax highlighting and clear output expectations.
+- All code snippets tested for correctness before inclusion.
+- Dependencies and environment setup documented inline.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Chatbot & RAG Requirements
+- Embedded RAG chatbot MUST answer content-based questions accurately.
+- Chatbot trained on book content; augmented with vetted external references.
+- Query handling scope clearly defined (in-scope: book content + selected tech docs; out-of-scope: general advice outside domain).
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development & Quality Standards
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Writing Process
+- Outline and structure drafted first; approved before detailed writing.
+- Technical accuracy reviewed via official sources before publication.
+- Code examples tested in isolation; integration tested in capstone project.
+- Peer review (or self-review against standards) before section finalization.
+
+### Testing & Validation
+- All runnable code sections MUST pass syntax validation.
+- Setup procedures tested in clean environments (minimal baseline assumptions).
+- Capstone project tested end-to-end; success criteria documented and validated.
+- Integration between book content and RAG chatbot verified.
+
+### Deployment Standards
+- Final output deployed to GitHub Pages via Docusaurus build pipeline.
+- All assets (images, code files, config) tracked in version control.
+- Deployment process documented and reproducible (CI/CD or manual steps equally clear).
+- Live site tested for accessibility, load times, and content correctness.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Procedure
+Constitution changes require explicit ratification decision. MINOR amendments (clarifications, new guidance) documented as version bumps with rationale. MAJOR amendments (principle removals or redefinitions) require architectural review; document via ADR if cross-cutting.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Versioning Policy
+- MAJOR.MINOR.PATCH semantic versioning applies.
+- MAJOR: Backward-incompatible principle changes or removals.
+- MINOR: New principles, significant guidance expansion, structural additions.
+- PATCH: Clarifications, wording refinements, typo fixes.
+
+### Compliance & Review
+- All feature specifications and plans MUST reference relevant principles.
+- Pull requests affecting content quality or tooling decisions MUST justify alignment with constitution.
+- Periodic review (end of each module) to validate adherence and adjust if experience contradicts principles.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-21 | **Last Amended**: 2025-12-21

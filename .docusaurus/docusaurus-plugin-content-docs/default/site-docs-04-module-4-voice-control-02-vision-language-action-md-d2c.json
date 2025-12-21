@@ -1,0 +1,25 @@
+{
+  "id": "module-4-voice-control/09-vision-language-action",
+  "title": "Chapter 9 - Vision-Language-Action: Complete Autonomy",
+  "description": "Introduction",
+  "source": "@site/docs/04-module-4-voice-control/02-vision-language-action.md",
+  "sourceDirName": "04-module-4-voice-control",
+  "slug": "/module-4-voice-control/09-vision-language-action",
+  "permalink": "/native-book/module-4-voice-control/09-vision-language-action",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/04-module-4-voice-control/02-vision-language-action.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "09-vision-language-action",
+    "title": "Chapter 9 - Vision-Language-Action: Complete Autonomy",
+    "sidebar_label": "Chapter 9: Vision-Language-Action"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 8: LLM Integration",
+    "permalink": "/native-book/module-4-voice-control/08-llm-integration"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "module-3-ai-perception/06-isaac-fundamentals",
+  "title": "Chapter 6 - NVIDIA Isaac: GPU-Accelerated Robotics",
+  "description": "Introduction",
+  "source": "@site/docs/03-module-3-ai-perception/01-isaac-fundamentals.md",
+  "sourceDirName": "03-module-3-ai-perception",
+  "slug": "/module-3-ai-perception/06-isaac-fundamentals",
+  "permalink": "/native-book/module-3-ai-perception/06-isaac-fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/03-module-3-ai-perception/01-isaac-fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "06-isaac-fundamentals",
+    "title": "Chapter 6 - NVIDIA Isaac: GPU-Accelerated Robotics",
+    "sidebar_label": "Chapter 6: Isaac Basics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 5: ROS 2 + Gazebo",
+    "permalink": "/native-book/module-2-digital-twin/05-ros2-gazebo-bridge"
+  },
+  "next": {
+    "title": "Chapter 7: Perception Pipelines",
+    "permalink": "/native-book/module-3-ai-perception/07-perception-pipelines"
+  }
+}

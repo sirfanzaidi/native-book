@@ -1,0 +1,22 @@
+{
+  "id": "index",
+  "title": "Physical AI & Humanoid Robotics",
+  "description": "A comprehensive guide to building autonomous humanoid robots using ROS 2, simulation, perception, and voice control.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/native-book/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Chapter 1: Architecture",
+    "permalink": "/native-book/module-1-ros2/01-introduction"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "module-2-digital-twin/05-ros2-gazebo-bridge",
+  "title": "Chapter 5 - ROS 2 and Gazebo Integration",
+  "description": "Introduction",
+  "source": "@site/docs/02-module-2-digital-twin/02-ros2-gazebo-bridge.md",
+  "sourceDirName": "02-module-2-digital-twin",
+  "slug": "/module-2-digital-twin/05-ros2-gazebo-bridge",
+  "permalink": "/native-book/module-2-digital-twin/05-ros2-gazebo-bridge",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/02-module-2-digital-twin/02-ros2-gazebo-bridge.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "05-ros2-gazebo-bridge",
+    "title": "Chapter 5 - ROS 2 and Gazebo Integration",
+    "sidebar_label": "Chapter 5: ROS 2 + Gazebo"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 4: Gazebo Basics",
+    "permalink": "/native-book/module-2-digital-twin/04-gazebo-fundamentals"
+  },
+  "next": {
+    "title": "Chapter 6: Isaac Basics",
+    "permalink": "/native-book/module-3-ai-perception/06-isaac-fundamentals"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "module-3-ai-perception/07-perception-pipelines",
+  "title": "Chapter 7 - Complete Perception Pipelines",
+  "description": "Introduction",
+  "source": "@site/docs/03-module-3-ai-perception/02-perception-pipelines.md",
+  "sourceDirName": "03-module-3-ai-perception",
+  "slug": "/module-3-ai-perception/07-perception-pipelines",
+  "permalink": "/native-book/module-3-ai-perception/07-perception-pipelines",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/03-module-3-ai-perception/02-perception-pipelines.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "07-perception-pipelines",
+    "title": "Chapter 7 - Complete Perception Pipelines",
+    "sidebar_label": "Chapter 7: Perception Pipelines"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6: Isaac Basics",
+    "permalink": "/native-book/module-3-ai-perception/06-isaac-fundamentals"
+  },
+  "next": {
+    "title": "Chapter 8: LLM Integration",
+    "permalink": "/native-book/module-4-voice-control/08-llm-integration"
+  }
+}

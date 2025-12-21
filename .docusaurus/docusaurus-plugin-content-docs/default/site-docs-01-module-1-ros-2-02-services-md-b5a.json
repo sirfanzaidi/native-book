@@ -1,0 +1,29 @@
+{
+  "id": "module-1-ros2/02-services",
+  "title": "Chapter 2 - ROS 2 Services & Actions",
+  "description": "Introduction",
+  "source": "@site/docs/01-module-1-ros2/02-services.md",
+  "sourceDirName": "01-module-1-ros2",
+  "slug": "/module-1-ros2/02-services",
+  "permalink": "/native-book/module-1-ros2/02-services",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/01-module-1-ros2/02-services.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "02-services",
+    "title": "Chapter 2 - ROS 2 Services & Actions",
+    "sidebar_label": "Chapter 2: Services"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Architecture",
+    "permalink": "/native-book/module-1-ros2/01-introduction"
+  },
+  "next": {
+    "title": "Chapter 3: Advanced Nodes",
+    "permalink": "/native-book/module-1-ros2/03-advanced-nodes"
+  }
+}

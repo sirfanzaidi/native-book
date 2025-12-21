@@ -1,0 +1,29 @@
+{
+  "id": "module-4-voice-control/08-llm-integration",
+  "title": "Chapter 8 - Large Language Models for Robotics",
+  "description": "Introduction",
+  "source": "@site/docs/04-module-4-voice-control/01-llm-integration.md",
+  "sourceDirName": "04-module-4-voice-control",
+  "slug": "/module-4-voice-control/08-llm-integration",
+  "permalink": "/native-book/module-4-voice-control/08-llm-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/native-book/native-book/tree/main/docs/04-module-4-voice-control/01-llm-integration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "08-llm-integration",
+    "title": "Chapter 8 - Large Language Models for Robotics",
+    "sidebar_label": "Chapter 8: LLM Integration"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 7: Perception Pipelines",
+    "permalink": "/native-book/module-3-ai-perception/07-perception-pipelines"
+  },
+  "next": {
+    "title": "Chapter 9: Vision-Language-Action",
+    "permalink": "/native-book/module-4-voice-control/09-vision-language-action"
+  }
+}

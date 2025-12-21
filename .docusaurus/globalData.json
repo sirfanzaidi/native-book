@@ -1,0 +1,78 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/native-book/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/native-book/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "index",
+              "path": "/native-book/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-ros2/01-introduction",
+              "path": "/native-book/module-1-ros2/01-introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-ros2/02-services",
+              "path": "/native-book/module-1-ros2/02-services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-ros2/03-advanced-nodes",
+              "path": "/native-book/module-1-ros2/03-advanced-nodes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2-digital-twin/04-gazebo-fundamentals",
+              "path": "/native-book/module-2-digital-twin/04-gazebo-fundamentals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2-digital-twin/05-ros2-gazebo-bridge",
+              "path": "/native-book/module-2-digital-twin/05-ros2-gazebo-bridge",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-perception/06-isaac-fundamentals",
+              "path": "/native-book/module-3-ai-perception/06-isaac-fundamentals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-perception/07-perception-pipelines",
+              "path": "/native-book/module-3-ai-perception/07-perception-pipelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-voice-control/08-llm-integration",
+              "path": "/native-book/module-4-voice-control/08-llm-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-voice-control/09-vision-language-action",
+              "path": "/native-book/module-4-voice-control/09-vision-language-action",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/native-book/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
