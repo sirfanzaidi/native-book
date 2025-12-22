@@ -1,23 +1,22 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a simple framework built on top of it.
- * For details, see: https://infima.dev/
+ * Any CSS included here will be global.
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2563eb;
-  --ifm-color-primary-dark: #1e40af;
-  --ifm-color-primary-darker: #1e3a8a;
-  --ifm-color-primary-darkest: #172554;
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
   --ifm-color-primary-light: #60a5fa;
   --ifm-color-primary-lighter: #93c5fd;
   --ifm-color-primary-lightest: #dbeafe;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Soft colorful background */
+  --site-bg-gradient: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f5f3ff 100%);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #60a5fa;
   --ifm-color-primary-dark: #3b82f6;
@@ -27,59 +26,84 @@
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --site-bg-gradient: radial-gradient(circle at 50% 0%, #0f172a 0%, #020617 100%);
+}
+
+body {
+  background: var(--site-bg-gradient) fixed;
+  background-attachment: fixed;
 }
 
 /* Code block styling */
 code {
-  background-color: #f5f5f5;
-  color: #d73a49;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #2563eb;
   padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-family: 'Courier New', monospace;
+  border-radius: 4px;
 }
 
 [data-theme='dark'] code {
-  background-color: #2b2b2b;
-  color: #f8f8f2;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #93c5fd;
 }
 
-/* Custom callout boxes */
-.callout-note {
-  background-color: #e7f3ff;
-  border-left: 4px solid #2563eb;
-  padding: 12px;
-  margin: 16px 0;
-  border-radius: 4px;
+/* Sidebar on left (default) */
+.docMainContainer {
+  display: flex;
+  flex-direction: row;
 }
 
-[data-theme='dark'] .callout-note {
-  background-color: #1e3a5f;
-  border-left-color: #60a5fa;
+/* Hide sidebar - can be reverted by removing this rule */
+.sidebar {
+  display: none !important;
 }
 
-.callout-warning {
-  background-color: #fff3cd;
-  border-left: 4px solid #ffc107;
-  padding: 12px;
-  margin: 16px 0;
-  border-radius: 4px;
+.docSidebarContainer {
+  display: none !important;
 }
 
-[data-theme='dark'] .callout-warning {
-  background-color: #5f4a1d;
-  border-left-color: #ffc107;
+/* Center main page content */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-/* Anchor links */
-a {
-  color: #2563eb;
-  text-decoration: none;
+main {
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Remove extra spacing from markdown elements */
+.markdown h1,
+.markdown p {
+  margin-bottom: 0.5rem;
 }
 
-[data-theme='dark'] a {
-  color: #60a5fa;
+.markdown > *:last-child {
+  margin-bottom: 0;
 }
+
+/* Remove bottom padding from page wrapper */
+.col {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Remove extra space in main content area */
+.docMainContainerCol {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.docItemContainer {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+

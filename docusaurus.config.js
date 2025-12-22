@@ -5,7 +5,7 @@
 const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A Spec-Driven Guide to ROS 2, Simulation, Perception, and Voice Control',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://native-book.github.io',
@@ -46,6 +46,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Physical AI Book',
@@ -59,6 +64,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Chapters',
+          },
+          {
+            href: '/',
+            label: 'Explore Modules',
+            position: 'left',
           },
           {
             href: 'https://github.com/native-book/native-book',
