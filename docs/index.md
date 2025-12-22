@@ -2,6 +2,8 @@
 slug: /
 ---
 
+import ModuleCards from '@site/src/components/ModuleCards';
+
 # Physical AI & Humanoid Robotics
 
 A comprehensive guide to building autonomous humanoid robots using ROS 2, simulation, perception, and voice control.
@@ -12,10 +14,6 @@ A comprehensive guide to building autonomous humanoid robots using ROS 2, simula
 - Explore the modules at the left sidebar
 - All code examples are reproducible on Windows, Ubuntu, and macOS
 
-## Book Modules
+## Explore the Modules
 
-1. Module 1: The Robotic Nervous System (ROS 2)
-2. Module 2: The Digital Twin (Gazebo & Unity)
-3. Module 3: The AI-Robot Brain (NVIDIA Isaac)
-4. Module 4: Vision-Language-Action (VLA)
-5. Capstone Project: The Autonomous Humanoid
+<ModuleCards />
