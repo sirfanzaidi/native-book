@@ -43,6 +43,17 @@ const config = {
     ],
   ],
 
+  // RAG Chatbot Integration
+  scripts: [
+    {
+      src: '/native-book/js/chatbot.js',
+      async: true,
+    },
+  ],
+  stylesheets: [
+    '/native-book/css/chatbot.css',
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

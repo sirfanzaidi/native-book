@@ -1,1 +1,53 @@
-node_modules
+# Node.js (Docusaurus frontend)
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.local
+.env.*.local
+
+# Python (FastAPI backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Backend specific
+backend/.env
+backend/venv/
+backend/__pycache__/
+backend/*.log
+backend/tests/__pycache__/
+
+# Documentation build
+.docusaurus/
