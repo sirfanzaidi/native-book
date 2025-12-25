@@ -1,0 +1,35 @@
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database & Vector Store
+qdrant-client>=1.6.0,<2.0.0  # Flexible version to find available wheels
+asyncpg>=0.30.0  # Python 3.13 compatible
+
+# LLM & Embeddings
+httpx==0.26.0
+sentence-transformers==2.3.1
+# torch will be installed automatically by sentence-transformers
+# If you need to install torch manually for CPU: pip install torch --index-url https://download.pytorch.org/whl/cpu
+# For CUDA: pip install torch --index-url https://download.pytorch.org/whl/cu118
+
+# Configuration & Utilities
+python-dotenv==1.0.1
+pydantic>=2.10.0  # Python 3.13 compatible
+pydantic-settings>=2.7.0  # Python 3.13 compatible
+PyYAML==6.0.1
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+locust==2.20.0
+
+# Code Quality
+black==24.1.1
+mypy==1.8.0
+ruff==0.1.14
+
+# Monitoring & Logging
+structlog==24.1.0

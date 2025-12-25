@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+source/
+scripts/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Environment files (secrets should be in Hugging Face Spaces secrets)
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Documentation
+*.md
+!README.md
+
+# Git
+.git/
+.gitignore
+
+# Rust build artifacts (if any)
+target/
+Cargo.lock
+Cargo.toml
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Claude/Specify files
+.claude/
+.specify/
+CLAUDE.md
+specs/
+history/
+
+# Implementation docs
+RAG_FASTAPI_ARCHITECTURE.md
+FASTAPI_CODE_EXAMPLES.md
+IMPLEMENTATION_CHECKLIST.md
+IMPLEMENTATION_STATUS.md
+
+# Scripts
+scripts/
+
+# Hugging Face files (keep these)
+!Dockerfile
+!requirements.txt
+!.env.example
