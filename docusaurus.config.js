@@ -8,12 +8,12 @@ const config = {
   favicon: 'img/logo.svg',
 
   // Set the production url of your site here
-  url: 'https://native-book.github.io',
+  url: 'https://sirfanzaidi.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: '/native-book/',
 
   // GitHub pages deployment config
-  organizationName: 'native-book',
+  organizationName: 'sirfanzaidi',
   projectName: 'native-book',
   deploymentBranch: 'gh-pages',
 
