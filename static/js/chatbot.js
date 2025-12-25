@@ -12,7 +12,7 @@
   // Auto-detect environment: use Hugging Face URL in production, localhost in development
   const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
   const API_BASE_URL = isProduction
-    ? 'https://YOUR_HF_USERNAME-SPACE_NAME.hf.space'  // TODO: Replace with your actual Hugging Face Space URL
+    ? 'https://irfanzaidi-backend-chatbot.hf.space'
     : 'http://localhost:8080';
   const API_ENDPOINT = `${API_BASE_URL}/api/rag/query`;
 
