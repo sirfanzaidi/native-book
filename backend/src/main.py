@@ -82,7 +82,9 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
             error=str(e),
             error_type=type(e).__name__,
         )
-        raise
+        # Don't raise the exception - allow the app to start with services in failed state
+        # The health check endpoint will indicate which services are unhealthy
+        logger.warning("application_starting_with_failed_services", message="App will start but some services may be unavailable until environment variables are properly configured")
 
     yield
 
