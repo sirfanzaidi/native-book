@@ -1,158 +1,110 @@
-# Physical AI & Humanoid Robotics: A Spec-Driven Guide
+---
+title: RAG Chatbot Backend
+emoji: 🤖
+colorFrom: purple
+colorTo: blue
+sdk: docker
+pinned: false
+app_port: 7860
+---
 
-A comprehensive, verified, and reproducible guide to building autonomous humanoid robots using ROS 2, simulation, perception, and voice control.
+# RAG Chatbot Backend
 
-## 📚 Book Overview
+FastAPI backend service for the Integrated RAG Chatbot that enables interactive querying of AI/Robotics book content.
 
-This book provides step-by-step learning across four core modules:
+## Features
 
-1. **Module 1: The Robotic Nervous System (ROS 2)** - Middleware fundamentals
-2. **Module 2: The Digital Twin (Gazebo & Unity)** - Physics simulation
-3. **Module 3: The AI-Robot Brain (NVIDIA Isaac)** - GPU-accelerated perception
-4. **Module 4: Vision-Language-Action (VLA)** - Voice-controlled robot actions
-5. **Capstone Project** - Full system integration
+- **Full-book queries**: Search across all book chapters
+- **Selected-text queries**: Ask questions about specific highlighted passages
+- **Source references**: All answers include clickable source links
+- **Vector search**: Semantic search using Qdrant and sentence-transformers
+- **LLM generation**: Answer generation via OpenRouter API
 
-## 🚀 Quick Start
+## Tech Stack
 
-### With Docker (Easiest)
+- **Web Framework**: FastAPI + uvicorn
+- **Vector Store**: Qdrant Cloud (free tier)
+- **Database**: Neon Serverless Postgres
+- **LLM**: OpenRouter API (mistralai/devstral-2512:free)
+- **Embeddings**: sentence-transformers/all-MiniLM-L6-v2 (384-dim)
+- **Python**: 3.11+
 
-```bash
-docker-compose up
-# Opens ROS 2 environment ready for examples
+## Quick Start
+
+### 1. Prerequisites
+
+- Python 3.11 or higher
+- API keys for:
+  - Qdrant Cloud (free tier)
+  - Neon Serverless Postgres
+  - OpenRouter
+
+### 2. Environment Configuration
+
+This backend requires the following environment variables to be set in Hugging Face Spaces secrets:
+
+```
+OPENROUTER_API_KEY=your_openrouter_api_key
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+OPENROUTER_MODEL=mistralai/devstral-2512:free
+
+QDRANT_URL=your_qdrant_cloud_url
+QDRANT_API_KEY=your_qdrant_api_key
+QDRANT_COLLECTION_NAME=book_embeddings
+
+NEON_DATABASE_URL=your_neon_connection_string
+
+CORS_ALLOW_ORIGINS=https://sirfanzaidi.github.io/native-book,http://localhost:3000,http://localhost:3001
 ```
 
-### Native Installation
+### 3. API Endpoints
 
-#### Ubuntu 22.04
-```bash
-sudo apt install python3.9 python3-pip
-pip install rclpy
+#### Health Check
+```
+GET /health
 ```
 
-#### Windows WSL2
-```bash
-wsl --install -d Ubuntu-22.04
-# Then follow Ubuntu instructions above
+#### RAG Query
 ```
+POST /api/rag/query
 
-#### macOS
-```bash
-brew install python3 ros
-pip install rclpy
-```
+Request Body:
+{
+  "query": "What is ROS 2?",
+  "mode": "full_book",
+  "session_id": "optional-session-id"
+}
 
-### View the Book
-
-```bash
-npm install
-npm run start
-# Opens http://localhost:3000/native-book/
-```
-
-## 📖 Reading the Book
-
-**Start here**: [Chapter 1: ROS 2 Architecture](https://native-book.github.io/native-book/)
-
-Each chapter includes:
-- ✅ Explained concepts with visual diagrams
-- ✅ Complete code examples (tested on 3 platforms)
-- ✅ Expected output for each example
-- ✅ Links to official documentation
-
-## ✅ Key Features
-
-- **Verified**: All claims traced to official docs (ROS 2, Gazebo, NVIDIA Isaac, OpenAI)
-- **Reproducible**: Code runs unmodified on Windows (WSL2), Ubuntu 22.04, macOS
-- **Original**: Written by roboticists, no plagiarism
-- **Complete**: 15+ chapters with 40+ code examples
-
-## 🛠️ Development
-
-### Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on:
-- Writing new chapters
-- Adding code examples
-- Citation requirements
-- Testing procedures
-
-### Build and Deploy
-
-```bash
-# Install dependencies
-npm install
-
-# Build static site
-npm run build
-
-# Preview locally
-npm run serve
-
-# Deploy to GitHub Pages (requires permissions)
-npm run deploy
-```
-
-## 📊 Project Status
-
-- ✅ **MVP (v0.1)**: Module 1 Chapter 1 - **COMPLETE** 🎉
-  - Docusaurus site deployed
-  - Chapter 1 (ROS 2 Architecture) with 2 code examples
-  - All tests passing (19/19)
-  - Ready for GitHub Pages deployment
-- 🚧 **Phase 2**: Chapters 2-3 (ROS 2 continuation) - Planned
-- 📋 **Phase 3+**: Modules 2-4 & Capstone - Q1-Q2 2026
-
-**[→ Read the MVP Expansion Plan](./NEXT_STEPS.md)**
-
-## 📋 Success Criteria
-
-### MVP (Complete)
-- [x] Docusaurus site builds successfully
-- [x] Chapter 1 complete with code examples (800+ words)
-- [x] All examples tested on clean environment
-- [x] All examples have inline comments
-- [x] All claims cited to official documentation
-- [x] pytest validation suite (19 tests passing)
-- [x] GitHub Actions CI/CD workflow configured
-- [x] Docker environment ready
-
-### Phase 2+ (Upcoming)
-- [ ] Full Module 1 (3 chapters: intro, services, advanced nodes)
-- [ ] All Modules 1-4 (12+ chapters)
-- [ ] Capstone project integration
-- [ ] Deploy to GitHub Pages (ready, awaiting push)
-- [ ] Community contributions and feedback
-
-## 🔗 Links
-
-- **Official Site**: https://native-book.github.io/native-book/
-- **GitHub**: https://github.com/native-book/native-book
-- **ROS 2 Docs**: https://docs.ros.org/en/humble/
-- **Gazebo Docs**: https://gazebosim.org/docs/
-
-## 📝 License
-
-Creative Commons Attribution 4.0 International (CC BY 4.0)
-
-## 🙏 Citation
-
-```bibtex
-@book{nativeai2025,
-  title = {Physical {AI} \& {Humanoid} {Robotics}: {A} {Spec-Driven} {Guide}},
-  author = {Contributors},
-  year = {2025},
-  url = {https://github.com/native-book/native-book}
+Response:
+{
+  "answer": "ROS 2 is...",
+  "sources": [
+    {
+      "chapter_title": "Introduction to ROS 2",
+      "source_url": "/module-1-ros2/01-introduction",
+      "relevance_score": 0.85
+    }
+  ],
+  "latency_ms": 3500,
+  "session_id": "session-123"
 }
 ```
 
-## 👥 Community
+## Deployment to Hugging Face Spaces
 
-Have questions? Found an error? Want to contribute?
+This backend is configured for deployment to Hugging Face Spaces using Docker.
 
-- Open an issue on GitHub
-- Join our discussions
-- Submit a pull request
+### Configuration
+- Port: 7860 (required by Hugging Face Spaces)
+- SDK: Docker
+- The Dockerfile is configured to pre-download embedding models for faster startup
 
----
+### Build Process
+1. Docker downloads Python dependencies
+2. Downloads sentence-transformers model during build
+3. Copies source code from backend/src/
+4. Starts FastAPI server on port 7860
 
-**Ready to learn?** → [Start with Chapter 1: ROS 2 Architecture](https://native-book.github.io/native-book/)
+## License
+
+See main project LICENSE file.
