@@ -1,13 +1,3 @@
----
-title: RAG Chatbot Backend
-emoji: 🤖
-colorFrom: purple
-colorTo: blue
-sdk: docker
-pinned: false
-app_port: 7860
----
-
 # RAG Chatbot Backend
 
 FastAPI backend service for the Integrated RAG Chatbot that enables interactive querying of AI/Robotics book content.
