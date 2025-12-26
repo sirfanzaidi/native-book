@@ -20,6 +20,7 @@ This guide explains how to deploy your Docusaurus site to Vercel.
    - Build Command: `npm run build:vercel`
    - Output Directory: `build`
    - Root Directory: `.` (root)
+   - No custom configuration files needed (vercel.json handles routing)
 6. **Click "Deploy"**
 
 ### Method 2: Using Vercel CLI
