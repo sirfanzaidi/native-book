@@ -17,7 +17,6 @@ This guide explains how to deploy your Docusaurus site to Vercel.
 3. **Connect your GitHub repository** that contains the Docusaurus site
 4. **Vercel will automatically detect** it's a Docusaurus project
 5. **Configure the project**:
-   - Framework: `Docusaurus`
    - Build Command: `npm run build:vercel`
    - Output Directory: `build`
    - Root Directory: `.` (root)
@@ -42,20 +41,16 @@ vercel --build-env NODE_VERSION=18
 
 The deployment process uses these scripts:
 
-- `npm run build:vercel` - Prepares the Docusaurus config for Vercel deployment
+- `npm run build:vercel` - Prepares the Docusaurus config for Vercel deployment (changes base URL from `/native-book/` to `/`)
 - `npm run restore:config` - Restores the original config after deployment
 
 ### Base URL Configuration
 
-For Vercel deployment, the site is configured to serve from the root path (`/`) instead of `/native-book/` to work properly with Vercel's domain structure.
+For Vercel deployment, the site is automatically configured to serve from the root path (`/`) instead of `/native-book/` to work properly with Vercel's domain structure.
 
-### Environment Variables
+### CORS Headers
 
-If you need to add environment variables for Vercel:
-
-1. Go to your project in Vercel Dashboard
-2. Go to Settings → Environment Variables
-3. Add any required variables
+The vercel.json file includes proper CORS headers to ensure the chatbot integration works correctly.
 
 ## Post-Deployment
 
@@ -75,6 +70,11 @@ npm run restore:config
 This will restore the original GitHub Pages configuration.
 
 ## Troubleshooting
+
+### Site Not Loading
+- Make sure the base URL is correctly configured for the deployment target
+- Check that the build completed successfully
+- Verify that all static assets are accessible
 
 ### Build Errors
 - Ensure Node.js version 18+ is used

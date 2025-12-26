@@ -7,7 +7,6 @@ console.log('Restoring original Docusaurus config...');
 
 const originalConfigPath = path.join(__dirname, 'docusaurus.config.original.js');
 const currentConfigPath = path.join(__dirname, 'docusaurus.config.js');
-const tempConfigPath = path.join(__dirname, 'docusaurus.config.vercel.js');
 
 // Check if backup exists
 if (fs.existsSync(originalConfigPath)) {
@@ -15,12 +14,7 @@ if (fs.existsSync(originalConfigPath)) {
   fs.writeFileSync(currentConfigPath, originalConfig);
   console.log('Original config restored.');
 
-  // Clean up temporary files
-  if (fs.existsSync(tempConfigPath)) {
-    fs.unlinkSync(tempConfigPath);
-    console.log('Temporary Vercel config removed.');
-  }
-
+  // Clean up backup file
   if (fs.existsSync(originalConfigPath)) {
     fs.unlinkSync(originalConfigPath);
     console.log('Backup config removed.');
