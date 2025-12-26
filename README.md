@@ -105,6 +105,14 @@ This backend is configured for deployment to Hugging Face Spaces using Docker.
 3. Copies source code from backend/src/
 4. Starts FastAPI server on port 7860
 
+## Deployment
+
+### GitHub Pages (Current)
+The site is currently deployed to GitHub Pages at: https://sirfanzaidi.github.io/native-book/
+
+### Vercel (New Option)
+The site can also be deployed to Vercel. See [VERCEL_README.md](VERCEL_README.md) for deployment instructions.
+
 ## License
 
 See main project LICENSE file.
